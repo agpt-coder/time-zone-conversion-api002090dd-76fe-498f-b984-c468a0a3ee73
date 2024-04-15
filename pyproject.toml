@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "time-zone-conversion-api"
+version = "0.1.0"
+description = "To build a system that accepts a timestamp and its source time zone, then converts it to a specified target time zone while handling Daylight Saving Time (DST) adjustments, and returns the converted timestamp in ISO 8601 format, follow these steps with the specified tech stack:"
+authors = ["AutoGPT <info@agpt.co>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+fastapi = "^0.68.0"
+passlib = {version = "*", extras = ["bcrypt"]}
+prisma = "*"
+pydantic = "*"
+pyjwt = "^2.1.0"
+pytz = "*"
+uvicorn = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
